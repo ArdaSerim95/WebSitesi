@@ -182,3 +182,29 @@ footer {
     color: inherit;
     display: block;
 }
+
+/* Görsel Kartlarının Izgara (Grid) Düzeni */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.image-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Görsellerin oranını bozmadan sığdırır */
+    border-radius: 6px;
+    margin: 15px 0;
+}
