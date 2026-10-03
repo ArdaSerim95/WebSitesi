@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temel ve Dijital Elektronik Ders Notları</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome İkonları -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .pdf-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .pdf-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .pdf-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background-color: #4f46e5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .pdf-btn:hover {
+            background-color: #4338ca;
+        }
+        .pdf-btn.secondary {
+            background-color: #374151;
+        }
+        .pdf-btn.secondary:hover {
+            background-color: #1f2937;
+        }
+        .pdf-preview {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasyon / Menü -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-code"></i> DersNotları.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+        </ul>
+    </nav>
+
+    <!-- İçerik Bölümü -->
+    <div class="page-container">
+        <!-- Ders Başlığı ve Açıklama -->
+        <header style="margin-bottom: 30px;">
+            <h1><i class="fa-solid fa-microchip"></i> Temel ve Dijital Elektronik Ders Notları</h1>
+            <p style="margin-top: 10px; opacity: 0.8; line-height: 1.6;">
+            </p>
+        </header>
+
+        <!-- PDF Not 1 -->
+        <div class="pdf-card">
+            <h3><i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i> 1. Temel Elektronik Elemanları ve Lojik Kapılar</h3>
+            <p style="margin-top: 8px; font-size: 14px; opacity: 0.7;">Direnç, kondansatör, diyot, transistör mantığı ve AND, OR, NOT gibi mantıksal devre kapıları notları.</p>
+            
+            <div class="pdf-actions">
+                <a href="pdf/elektronik-temel-notlar.pdf" target="_blank" class="pdf-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> PDF'i Yeni Sekmede Aç
+                </a>
+                <a href="pdf/elektronik-temel-notlar.pdf" download class="pdf-btn secondary">
+                    <i class="fa-solid fa-download"></i> İndir
+                </a>
+            </div>
+
+            <!-- PDF Gömülü Önizleme -->
+            <iframe src="pdf/elektronik-temel-notlar.pdf" class="pdf-preview"></iframe>
+        </div>
+
+        <!-- PDF Not 2 -->
+        <div class="pdf-card">
+            <h3><i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i> 2. Mikrokontrolcüler (Arduino, ESP32, Raspberry Pi)</h3>
+            <p style="margin-top: 8px; font-size: 14px; opacity: 0.7;">Sensör bağlantıları, pin dizilimleri (GPIO), IoT temelleri ve örnek devre şemaları rehberi.</p>
+            
+            <div class="pdf-actions">
+                <a href="pdf/elektronik-mikrokontrolculer.pdf" target="_blank" class="pdf-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> PDF'i Yeni Sekmede Aç
+                </a>
+                <a href="pdf/elektronik-mikrokontrolculer.pdf" download class="pdf-btn secondary">
+                    <i class="fa-solid fa-download"></i> İndir
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

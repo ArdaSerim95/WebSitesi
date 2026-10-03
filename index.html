@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Notları & Kod Deposu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome İkonları -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigasyon / Menü -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-code"></i> DersNotları.</div>
+        <ul class="nav-links">
+            <li><a href="#courses">Dersler</a></li>
+            <li><a href="#resources">Faydalı Kaynaklar</a></li>
+            <li><a href="#about">Hakkında</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+
+    <!-- Hero / Giriş Bölümü -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bilgisayar Programcılığı <span class="highlight">Ders Notları</span></h1>
+            <p>Dönem dersleri, algoritma örnekleri, C# çözümleri ve faydalı kaynakların yer aldığı açık not platformu.</p>
+            <a href="#courses" class="btn">Ders Notlarına İncele</a>
+        </div>
+    </header>
+
+    <!-- Dersler ve Notlar Bölümü -->
+    <section id="courses" class="section">
+        <h2>Ders Notları & Projeler</h2>
+        <div class="projects-grid">
+            
+            <!-- Ders 1 -->
+            <div class="project-card">
+                <i class="fa-solid fa-laptop-code card-icon"></i>
+                <h3>Ağ Yönetimi ve Bilgi Güvenliği</h3>
+                <div class="tags">
+                    <span>C#</span>
+                    <span>Algoritmalar</span>
+                </div>
+            </div>
+
+            <!-- Ders 2 -->
+            <div class="project-card">
+                <i class="fa-solid fa-code card-icon"></i>
+                <h3>Temel ve Dijital Elektronik</h3>
+                <div class="tags">
+                    <span>Arduino</span>
+                    <span>Esp32</span>
+                    <span>Raspberry</span>
+                </div>
+            </div>
+
+            <!-- Ders 3 -->
+            <div class="project-card">
+                <i class="fa-solid fa-database card-icon"></i>
+                <h3>Ofis Yazılımları</h3>
+                <div class="tags">
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <!-- Ders 4 -->
+            <div class="project-card">
+                <i class="fa-solid fa-database card-icon"></i>
+                <h3>Matematik</h3>
+                <div class="tags">
+                    <span>Sayısal</span>
+                </div>
+            </div>
+
+                    <!-- Ders 5 -->
+            <div class="project-card">
+                <i class="fa-solid fa-database card-icon"></i>
+                <h3>Algoritma ve Programlama Temeli</h3>
+                <div class="tags">
+                    <span>Arduino</span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Faydalı Kaynaklar Bölümü -->
+    <section id="resources" class="section">
+        <h2>Faydalı Kaynaklar & Bağlantılar</h2>
+        <div class="skills-list">
+            <div class="skill-item"><i class="fa-brands fa-github"></i> GitHub Kod Repoları</div>
+            <div class="skill-item"><i class="fa-solid fa-book"></i> C# Resmi Dokümantasyon</div>
+            <div class="skill-item"><i class="fa-brands fa-stack-overflow"></i> Stack Overflow</div>
+            <div class="skill-item"><i class="fa-solid fa-graduation-cap"></i> Örnek Sınav Soruları</div>
+        </div>
+    </section>
+
+    <!-- Hakkında Bölümü -->
+    <section id="about" class="section">
+        <h2>Sitemiz Hakkında</h2>
+        <p>Ders notları için ödev sitesi.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DersNotları Platformu - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
